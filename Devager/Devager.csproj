@@ -57,6 +57,19 @@
     <Compile Include="Image\Watermarker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registry\Reg.cs" />
+    <Compile Include="SharpConfig\Comment.cs" />
+    <Compile Include="SharpConfig\Configuration.cs" />
+    <Compile Include="SharpConfig\ConfigurationElement.cs" />
+    <Compile Include="SharpConfig\ConfigurationReader.cs" />
+    <Compile Include="SharpConfig\ConfigurationWriter.cs" />
+    <Compile Include="SharpConfig\IgnoreAttribute.cs" />
+    <Compile Include="SharpConfig\ITypeStringConverter.cs" />
+    <Compile Include="SharpConfig\ParserException.cs" />
+    <Compile Include="SharpConfig\Section.cs" />
+    <Compile Include="SharpConfig\Setting.cs" />
+    <Compile Include="SharpConfig\SettingArrayEnumerator.cs" />
+    <Compile Include="SharpConfig\SettingValueCastException.cs" />
+    <Compile Include="SharpConfig\StockStringConverters.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
