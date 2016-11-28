@@ -6,13 +6,19 @@
     public class Reg
     {
         private bool _showError = false;
+
+        public Reg(string productName)
+        {
+            this._subKey = "SOFTWARE\\" + productName;
+        }
+
         public bool ShowError
         {
             get { return _showError; }
             set { _showError = value; }
         }
 
-        private string _subKey = "SOFTWARE\\" + Application.ProductName;
+        private string _subKey { get; set; }
 
         public string SubKey
         {

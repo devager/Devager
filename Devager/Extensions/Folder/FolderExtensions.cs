@@ -1,7 +1,9 @@
 ﻿namespace Devager.Extensions.Folder
 {
     using System;
+    using System.Collections.Generic;
     using System.IO;
+    using System.Linq;
 
     public static class FolderExtensions
     {
@@ -13,7 +15,7 @@
             }
         }
 
-        public static Boolean FileFind(this String txt, string file)
+        public static Boolean CreateFile(this String txt, string file)
         {
             if (!File.Exists(file))
             {
@@ -34,6 +36,20 @@
             return false;
 
 
+        }
+
+        public static string KlasorVarmi(this string folder)
+        {
+            if (!Directory.Exists(folder))
+                Directory.CreateDirectory(folder);
+            return folder;
+        }
+
+        public static List<string> FileFind(string rootPath , string file)
+        {
+            return Directory.GetFiles(rootPath, "*.*", SearchOption.AllDirectories)
+                .Where(r => Path.GetFileName(r) == file)
+                .ToList();
         }
 
         public static void FileSave(this string txt, string file)

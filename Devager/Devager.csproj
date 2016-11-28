@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Device\Device.cs" />
     <Compile Include="Device\Drive.cs" />
+    <Compile Include="Encrypt\Encrypt.cs" />
     <Compile Include="Extensions\Delta\DeltaExtensions.cs" />
     <Compile Include="Extensions\Dynamic\DynamicExtensions.cs" />
     <Compile Include="Extensions\Enumerable\DeltaExtensions.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="Extensions\Translate\TurkishExtensions.cs" />
     <Compile Include="Image\WaterMark.cs" />
     <Compile Include="Image\Watermarker.cs" />
+    <Compile Include="Net\Mail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registry\Reg.cs" />
     <Compile Include="SharpConfig\Comment.cs" />
