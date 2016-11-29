@@ -101,7 +101,7 @@
             return result;
         }
 
-        public static bool ValidTurkishIdNo(string tcNo)
+        public static bool ValidTurkishIdNo(this string tcNo)
         {
             var tc = new int[11];
             for (var i = 0; i < 11; i++)
