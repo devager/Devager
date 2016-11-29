@@ -60,5 +60,17 @@
             }
         }
 
+        public static void NovetoDeleteFolder(this string file, string target)
+        {
+            File.Move(file, target);
+
+            var path = Path.GetDirectoryName(file);
+            var count = Directory.GetFiles(path);
+            if (count.Length < 1)
+            {
+                Directory.Delete(path);
+            }
+
+        }
     }
 }
