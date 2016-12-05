@@ -33,7 +33,7 @@ namespace Devager.Device
             return dns;
         }
 
-        private static string GetCpuId()
+        public static string GetCpuId()
         {
             var cpuid = string.Empty;
             string sQuery = "SELECT ProcessorId FROM Win32_Processor";
@@ -48,7 +48,7 @@ namespace Devager.Device
             return cpuid.Trim();
         }
 
-        private static string GetMacAdress()
+        public static string GetMacAdress()
         {
             var macaddress = string.Empty;
             var nics = NetworkInterface.GetAllNetworkInterfaces();
@@ -64,7 +64,7 @@ namespace Devager.Device
             return macaddress.Trim();
         }
 
-        private static string GetHddSerial()
+        public static string GetHddSerial()
         {
             var dsk = new ManagementObject(@"win32_logicaldisk.deviceid=""c:""");
             dsk.Get();
