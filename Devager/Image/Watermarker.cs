@@ -1,4 +1,4 @@
-﻿namespace Devager.Image
+﻿namespace Devager
 {
     using System;
     using System.ComponentModel;

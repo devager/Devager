@@ -1,10 +1,10 @@
-﻿namespace Devager.Extensions.Dynamic
+﻿namespace Devager.Extensions
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.Dynamic;
-    public static class DynamicExtensions
+    public static class Dynamic
     {
         public static dynamic ToDynamic(this object value)
         {

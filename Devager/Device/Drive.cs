@@ -1,9 +1,9 @@
-﻿namespace Devager.Device
+﻿namespace Devager
 {
     using System.IO;
     using System.Linq;
 
-    public static class Drive
+    public static class Drives
     {
         public static float GetFileSize(this string folder, string searchPattern)
         {

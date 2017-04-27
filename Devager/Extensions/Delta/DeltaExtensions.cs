@@ -1,4 +1,4 @@
-﻿namespace Devager.Extensions.Delta
+﻿namespace Devager.Extensions
 {
     using System;
     using System.Collections.Generic;
@@ -38,7 +38,7 @@
         }
     }
 
-    public static class DeltaExtensions
+    public static class Delta
     {
         public static MergeDelta<TSource, TDest> GetMergeDelta<TSource, TDest>(Dictionary<string, MergeItem<TSource, TDest>> mergedDictionary)
             where TSource : class

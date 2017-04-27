@@ -1,7 +1,9 @@
-﻿namespace Devager.Extensions.HttpRequest
+﻿namespace Devager.Extensions
 {
     using System.Web;
-    public static class HttpRequestExtensions
+    using System;
+
+    public static class HttpReq
     {
         /// <summary>
         /// Extension method to retrieve the site url.
@@ -10,10 +12,11 @@
         /// http://someremoteserver/virtualdir/
         /// </summary>
         /// <param name="request"/>The site url with application path</param>      
-        public static string GetSiteUrl(this HttpRequest request)
+        /// 
+
+        public static string GetSiteUrla(this HttpRequest request)
         {
-            return request.Url.Scheme + @"://" + request.Url.Authority +
-                   (request.ApplicationPath.Length > 1 ? request.ApplicationPath + "/" : request.ApplicationPath);
+            return  request.Url.Scheme + @"://" + request.Url.Authority + (request.ApplicationPath.Length > 1 ? request.ApplicationPath + "/" : request.ApplicationPath);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Devager.Encrypt
+﻿namespace Devager
 {
     using System.Security.Cryptography;
     using System.Text;

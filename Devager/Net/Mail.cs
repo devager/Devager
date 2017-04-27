@@ -1,4 +1,4 @@
-﻿namespace Devager.Net
+﻿namespace Devager
 {
     using System;
     using System.Net;

@@ -1,4 +1,4 @@
-﻿namespace Devager.Registry
+﻿namespace Devager
 {
     using System;
     using Microsoft.Win32;

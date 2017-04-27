@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Devager.Device
+﻿
+namespace Devager
 {
     using System;
     using System.IO;
@@ -13,7 +8,7 @@ namespace Devager.Device
     using System.Net;
     using System.Net.NetworkInformation;
 
-    public static class Device
+    public static class Devices
     {
         public static string GetIp()
         {
@@ -36,7 +31,7 @@ namespace Devager.Device
         public static string GetCpuId()
         {
             var cpuid = string.Empty;
-            string sQuery = "SELECT ProcessorId FROM Win32_Processor";
+            const string sQuery = "SELECT ProcessorId FROM Win32_Processor";
             var oManagementObjectSearcher = new ManagementObjectSearcher(sQuery);
             var oCollection = oManagementObjectSearcher.Get();
             foreach (var oManagementObject in oCollection)

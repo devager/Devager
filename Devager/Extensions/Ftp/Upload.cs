@@ -1,4 +1,4 @@
-﻿namespace Devager.Extensions.Ftp
+﻿namespace Devager.Extensions
 {
     using System;
     using System.IO;

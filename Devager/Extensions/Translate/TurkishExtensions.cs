@@ -1,10 +1,10 @@
-﻿namespace Devager.Extensions.Translate
+﻿namespace Devager.Extensions
 {
     using System;
     using System.Linq;
     using System.Text;
     using System.Web;
-    public static class TurkishExtensions
+    public static class Turkish
     {
         public static string AddPossessiveSuffix(this string word)
         {

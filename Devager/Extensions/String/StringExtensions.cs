@@ -1,9 +1,9 @@
-﻿namespace Devager.Extensions.String
+﻿namespace Devager.Extensions
 {
     using System;
     using System.Linq;
 
-    public static class StringExtensions
+    public static class StringExt
     {
         public static int CalculateHammingDistance(this string source, string target)
         {

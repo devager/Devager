@@ -1,11 +1,11 @@
-﻿namespace Devager.Extensions.Folder
+﻿namespace Devager.Extensions
 {
     using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
 
-    public static class FolderExtensions
+    public static class Folder
     {
         public static void CreateFolder(this string path)
         {
@@ -15,7 +15,7 @@
             }
         }
 
-        public static Boolean CreateFile(this String txt, string file)
+        public static Boolean CreateFile(this string txt, string file)
         {
             if (!File.Exists(file))
             {
