@@ -53,6 +53,7 @@
     <Compile Include="Extensions\Folder\FolderExtensions.cs" />
     <Compile Include="Extensions\Ftp\Upload.cs" />
     <Compile Include="Extensions\HttpRequest\HttpRequestExtensions.cs" />
+    <Compile Include="Extensions\Property\PropertyExtension.cs" />
     <Compile Include="Extensions\String\StringExtensions.cs" />
     <Compile Include="Extensions\Translate\TurkishExtensions.cs" />
     <Compile Include="Helpers\Helpers.cs" />
