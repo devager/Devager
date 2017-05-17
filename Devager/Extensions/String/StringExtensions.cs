@@ -17,5 +17,13 @@
 
             return distance;
         }
+
+        public static string ListendFrame(this string frm, char chr)
+        {
+            var spl = frm.Split(chr);
+
+            return spl.Count() > 0 ? spl[spl.Count() - 1].Trim() : frm.Trim();
+        }
     }
+
 }
